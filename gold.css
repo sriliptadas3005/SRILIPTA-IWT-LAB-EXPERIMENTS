@@ -1,0 +1,121 @@
+body{
+background:black;
+font-family:Arial,sans-serif;
+}
+header{
+ display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: black;
+  margin:0;
+}
+.logo{
+	color:gold;
+}
+.menu{
+	display:flex;
+	align-items:center;
+	gap:30px;
+	margin-left:None;
+	margin-right:500px;
+}
+.item{
+	cursor:pointer;
+	color:white;
+	font-size:15px;
+}
+.buy {
+  background: gold;
+  border: none;
+  padding: 6px 14px;
+}
+
+.sell {
+  background: transparent;
+  border: 1px solid gold;
+  color: gold;
+  padding: 6px 14px;
+}
+.main{
+	display:flex;
+	padding:60px;
+}
+.left{
+	width:50%;
+}
+.left h1{
+	font-size:40px;
+	color:white;
+	line-height:0.95;
+	margin:0;
+}
+.gold{
+	display:block;
+	margin:0;
+	line-height:1;
+	color:gold;
+	font-style:italic;
+}
+.para{
+	font-size:20px;
+	color:white;
+	font-style:calibri;
+}
+.actions button {
+
+  margin-right: 10px;
+  padding: 10px 15px;
+}
+.gold-btn {
+  background: gold;
+  border: none;
+}
+.border-btn {
+  background: transparent;
+  border: 1px solid gold;
+  color: gold;
+}
+.stats {
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+  color:gold;
+}
+.right {
+  width: 50%;
+  background: #222;
+  padding: 30px;
+}
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+.box {
+  background:black;
+  padding: 15px;
+}
+@media(max-width: 800px) {
+  .main {
+    flex-direction: column;
+  }
+  .left, .right {
+    width: 100%;
+  }
+}
+.box1 {
+  background:black;
+   padding: 20px;
+  height: 110px;
+  align-items:right;
+  color: #333;
+}
+.box2 {
+  background:black;
+   padding: 20px;
+  height: 110px;
+  align-items:left;
+  color: #333;
+}
+.w{color:white}
