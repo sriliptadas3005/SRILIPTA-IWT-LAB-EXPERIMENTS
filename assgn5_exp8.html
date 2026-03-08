@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lab 13 Experiment 4</title>
+    <script>
+        function isPrime(num)
+        {
+            let count=0,value=1;
+            while(value<=num)
+            {
+                if(num%value==0)
+            {
+                count++;
+            }
+            value++
+        }
+        if(count==2)
+        {
+            return true;
+        }
+        else{
+            return false;
+        }
+        }
+        document.write(isPrime(5));
+    </script>
+</head>
+<body>
+</body>
+</html>

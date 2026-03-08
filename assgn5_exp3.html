@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lab 13 Experiment 3</title>
+    <script>
+       let n=353;
+       let digit,rev=0;
+       while(n>0)
+       {
+           digit=n%10;
+           rev=rev*10+digit;
+           n=Math.floor(n/10);
+       }
+       document.write("Reverse of the number is "+rev);
+       if(rev==353)
+       {
+           document.write("<br>The number is palindrome");
+       }
+       else
+       {
+           document.write("<br>The number is not palindrome");
+       }
+    </script>
+</head>
+<body>
+   
+</body>
+</html>
