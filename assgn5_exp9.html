@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lab 13 Experiment 9</title>
+    <script>
+        function armstrong(no){
+            let sum=0,count=0,digit=0;
+            let temp=no;
+            while(no!=0){
+                digit=no%10;
+                count++;
+                no=Math.floor(no/10);
+            }
+            no=temp;
+            while(no!=0){
+                digit=no%10;
+                sum=sum+Math.pow(digit,count);
+                no=Math.floor(no/10);
+            }
+            if(sum==temp){
+                document.write("Armstrong");
+            }
+            else{
+                document.write("Not Armstrong number");
+            }
+        }
+        armstrong(153);
+    </script>
+</head>
+<body>
+</body>
+</html>
