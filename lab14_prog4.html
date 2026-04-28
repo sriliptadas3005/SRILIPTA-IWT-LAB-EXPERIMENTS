@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Simple Counter</title>
+    <style>
+        input {
+            width: 60px;
+            text-align: center;
+            font-size: 18px;
+        }
+        button {
+            padding: 8px 12px;
+            font-size: 16px;
+            margin: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="decrease()">-</button>
+    <input type="text" id="counter" value="0" readonly>
+    <button onclick="increase()">+</button>
+    <script>
+        function increase() {
+            let input = document.getElementById("counter");
+            let value = parseInt(input.value);
+            input.value = value + 1;
+        }
+        function decrease() {
+            let input = document.getElementById("counter");
+            let value = parseInt(input.value);
+            if (value > 0) {
+                input.value = value - 1;
+            }
+        }
+    </script>
+</body>
+</html>

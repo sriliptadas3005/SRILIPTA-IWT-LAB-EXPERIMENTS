@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Prime Number Checker</title>
+</head>
+<body>
+    <h3>Check Prime Number</h3>
+    <form onsubmit="checkPrime(event)">
+        <input type="number" id="num" placeholder="Enter a number" required>
+        <button type="submit">Check</button>
+    </form>
+    <script>
+        function checkPrime(event) {
+            event.preventDefault(); 
+            let num = parseInt(document.getElementById("num").value);
+            let isPrime = true;
+            if (num <= 1) {
+                isPrime = false;
+            } else {
+                for (let i = 2; i <= Math.sqrt(num); i++) {
+                    if (num % i === 0) {
+                        isPrime = false;
+                        break;
+                    }
+                }
+            }
+            if (isPrime) {
+                alert(num + " is a Prime Number");
+            } else {
+                alert(num + " is NOT a Prime Number");
+            }
+        }
+    </script>
+</body>
+</html>

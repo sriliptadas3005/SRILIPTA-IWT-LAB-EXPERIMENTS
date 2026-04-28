@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun(){
+            document.getElementsByTagName("h1")[0].innerHTML="Welcome to Silicon";
+            let name=document.getElementById("text1").value;
+            document.write(name);
+        }
+    </script>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <input type="text" id="text1" placeholder="Enter name"><br>
+    <input type="button"  value="submit" onclick="fun()">
+</body>
+</html>

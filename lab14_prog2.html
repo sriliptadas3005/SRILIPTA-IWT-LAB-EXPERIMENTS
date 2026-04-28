@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Toggle Paragraph</title>
+</head>
+<body>
+
+    <button id="toggleBtn" onclick="toggleText()">Hide</button>
+
+    <p id="textPara">
+        This is a sample paragraph. Click the button to hide or show this text.
+    </p>
+
+    <script>
+        function toggleText() {
+            let para = document.getElementById("textPara");
+            let btn = document.getElementById("toggleBtn");
+
+            if (para.style.display === "none") {
+                para.style.display = "block";
+                btn.innerText = "Hide";
+            } else {
+                para.style.display = "none";
+                btn.innerText = "Show";
+            }
+        }
+    </script>
+
+</body>
+</html>
